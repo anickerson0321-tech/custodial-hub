@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Brand theme: swap these values (and public/icon.svg) to rebrand the whole hub. */
+:root {
+  --brand: #0ea5e9;
+  --brand-dark: #0369a1;
+  --accent: #fde047;
+  --good: #22c55e;
+  --bad: #ef4444;
+  --bg: #e0f2fe;
+  --card: #ffffff;
+  --ink: #0f172a;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+button { touch-action: manipulation; }
+.game-surface { touch-action: none; }
